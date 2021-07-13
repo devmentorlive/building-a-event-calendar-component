@@ -1,13 +1,14 @@
 import { differenceInDays, parseISO, addDays } from "date-fns";
 
 export function getEvents() {
-  return require("./fake.json")
+  const events = require("./fake.json");
+  const delta = differenceInDays(new Date(), parseISO(events[0].startsAt));
+
+  return events
     .map((event, i) => {
-      const timestamp = parseISO(event.startsAt);
-      const delta = differenceInDays(timestamp, new Date());
       return {
         ...event,
-        startsAt: addDays(timestamp, Math.abs(delta)).toISOString(),
+        startsAt: addDays(parseISO(event.startsAt), delta).toISOString(),
       };
     })
     .sort((a, b) => new Date(a.startsAt) - new Date(b.startsAt));
