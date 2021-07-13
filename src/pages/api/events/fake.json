@@ -1,0 +1,65 @@
+[
+  {
+    "guestName": "Emily Awsome",
+    "email": "emily@awesome.com",
+    "type": "mentorship",
+    "startsAt": "2021-07-10T05:00:00.000Z",
+    "duration": 120
+  },
+  {
+    "guestName": "Andrew Quick",
+    "email": "andrew@quick.xo",
+    "type": "consulting",
+    "startsAt": "2021-07-11T07:30:00.000Z",
+    "duration": 60
+  },
+  {
+    "guestName": "Phil Spicy",
+    "email": "phil@spicy.com.mx",
+    "type": "mentorship",
+    "startsAt": "2021-07-11T10:00:00.000Z",
+    "duration": 120
+  },
+  {
+    "guestName": "Ryan Clever",
+    "email": "ryan@clever.com.uk",
+    "type": "mentorship",
+    "startsAt": "2021-07-12T05:00:00.000Z",
+    "duration": 60
+  },
+  {
+    "guestName": "Hilda Strong",
+    "email": "hilda@strong.com",
+    "type": "mentorship",
+    "startsAt": "2021-07-12T10:00:00.000Z",
+    "duration": 60
+  },
+  {
+    "guestName": "Justin Banks",
+    "email": "justin@banks.com",
+    "type": "consulting",
+    "startsAt": "2021-07-13T12:00:00.000Z",
+    "duration": 120
+  },
+  {
+    "guestName": "Ryan Clever",
+    "email": "ryan@clever.com.uk",
+    "type": "mentorship",
+    "startsAt": "2021-07-13T05:00:00.000Z",
+    "duration": 60
+  },
+  {
+    "guestName": "Hilda Strong",
+    "email": "hilda@strong.com",
+    "type": "mentorship",
+    "startsAt": "2021-07-17T10:00:00.000Z",
+    "duration": 60
+  },
+  {
+    "guestName": "Justin Banks",
+    "email": "justin@banks.com",
+    "type": "consulting",
+    "startsAt": "2021-07-17T12:00:00.000Z",
+    "duration": 120
+  }
+]
