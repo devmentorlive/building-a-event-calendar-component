@@ -9,55 +9,19 @@ import {
 } from "date-fns";
 
 import EventCard from "./event";
+import Tabs from "./tabs";
 
 function eventsByDay(events, day) {
   return events.filter((event) => isSameDay(parseISO(event.startsAt), day));
 }
 
 export default function EventList({ events }) {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("today");
 
   return (
     <div className="shadow-xl">
       <div className="rounded-t-md flex p-6 space-x-6  border-t border-l border-r border-b border-gray-300 bg-gray-50 ">
-        <div>
-          <a onClick={() => setFilter("all")}>All</a>
-          <div
-            className={`w-0 border-t-4  transition-all ${
-              filter === "all" ? "w-full border-blue-400" : "border-transparent"
-            }`}
-          />
-        </div>
-        <div>
-          <a onClick={() => setFilter("today")}>Today</a>
-          <div
-            className={`w-0 border-t-4  transition-all ${
-              filter === "today"
-                ? "w-full border-purple-400"
-                : "border-transparent"
-            }`}
-          />
-        </div>
-        <div>
-          <a onClick={() => setFilter("upcoming")}>Upcoming</a>
-          <div
-            className={`w-0 border-t-4  transition-all ${
-              filter === "upcoming"
-                ? "w-full border-green-400"
-                : "border-transparent"
-            }`}
-          />
-        </div>
-        <div>
-          <a onClick={() => setFilter("past")}>Past</a>
-          <div
-            className={`w-0 border-t-4  transition-all ${
-              filter === "past"
-                ? "w-full border-red-400 "
-                : "border-transparent"
-            }`}
-          />
-        </div>
+        <Tabs filter={filter} setFilter={setFilter} />
       </div>
 
       <div className="border-l border-r border-gray-300">
