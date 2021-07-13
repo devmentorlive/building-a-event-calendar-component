@@ -1,5 +1,5 @@
 import { getEvents } from "@/api/events";
-import EventList from "@/features/events";
+import EventList from "@/features/events/list";
 
 export default function Home({ events }) {
   return (
